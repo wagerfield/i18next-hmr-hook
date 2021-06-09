@@ -6,6 +6,6 @@ module.exports = {
     locales: ["de-DE", "en-US", "fr-FR"],
   },
   defaultNS: "core",
-  // ns: ["core", "page"],
+  ns: ["core", "page"],
   use: process.browser ? [HttpBackend] : [],
 }
