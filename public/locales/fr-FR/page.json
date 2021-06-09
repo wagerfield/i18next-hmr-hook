@@ -1,0 +1,10 @@
+{
+  "index": {
+    "title": "Domicile",
+    "body": "Ceci est la page d'accueil."
+  },
+  "about": {
+    "title": "À propos de",
+    "body": "C'est la page à propos."
+  }
+}

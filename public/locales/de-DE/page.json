@@ -1,0 +1,10 @@
+{
+  "index": {
+    "title": "Zuhause",
+    "body": "Dies ist die Startseite."
+  },
+  "about": {
+    "title": "Über",
+    "body": "Dies ist die About-Seite."
+  }
+}

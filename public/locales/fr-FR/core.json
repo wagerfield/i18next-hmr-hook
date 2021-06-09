@@ -1,0 +1,8 @@
+{
+  "footer": "i18next est génial!",
+  "locale": {
+    "de-DE": "Allemande",
+    "en-US": "Anglaise",
+    "fr-FR": "Français"
+  }
+}
