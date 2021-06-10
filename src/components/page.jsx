@@ -41,7 +41,7 @@ export const Page = ({ page }) => {
         <h1 className="font-bold text-2xl">{t(`page:${page}.title`)}</h1>
         <p className="text-gray-600">{t(`page:${page}.body`)}</p>
         <pre className="text-sm text-red-500">
-          [{i18n?.options.ns.join(", ")}]
+          {i18n && JSON.stringify(i18n.options.ns)}
         </pre>
       </div>
       <footer className="flex items-center justify-between px-6 py-2 bg-gray-100">
