@@ -18,7 +18,7 @@ const PageNav = ({ className, links }) => (
 
 export const Page = ({ page }) => {
   const { locales, pathname } = useRouter()
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   return (
     <main className="min-h-screen flex flex-col text-gray-900">
@@ -37,9 +37,12 @@ export const Page = ({ page }) => {
           }))}
         />
       </header>
-      <div className="flex-1 p-6">
+      <div className="flex-1 p-6 space-y-4">
         <h1 className="font-bold text-2xl">{t(`page:${page}.title`)}</h1>
-        <p className="mt-3 text-gray-600">{t(`page:${page}.body`)}</p>
+        <p className="text-gray-600">{t(`page:${page}.body`)}</p>
+        <pre className="text-sm text-red-500">
+          [{i18n?.options.ns.join(", ")}]
+        </pre>
       </div>
       <footer className="flex items-center justify-between px-6 py-2 bg-gray-100">
         <span className="italic text-gray-500">{t(`core:footer`)}</span>
