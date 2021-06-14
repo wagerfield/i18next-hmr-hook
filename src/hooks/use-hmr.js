@@ -4,14 +4,14 @@ import { useEffect } from "react"
 export function useHMR() {
   const { i18n } = useTranslation()
 
-  if (process.env.NODE_ENV === "development" && !process.browser) {
+  if (process.env.NODE_ENV === "development" && !process.browser && i18n) {
     import("i18next-hmr/server").then(({ applyServerHMR }) => {
       applyServerHMR(i18n)
     })
   }
 
   useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
+    if (process.env.NODE_ENV === "development" && i18n) {
       import("i18next-hmr/client").then(({ applyClientHMR }) => {
         applyClientHMR(i18n)
       })
