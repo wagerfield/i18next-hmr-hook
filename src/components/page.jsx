@@ -44,8 +44,8 @@ export const Page = ({ page }) => {
           {i18n && JSON.stringify(i18n.options.ns)}
         </pre>
       </div>
-      <footer className="flex items-center justify-between px-6 py-2 bg-gray-100">
-        <span className="italic text-gray-500">{t(`core:footer`)}</span>
+      <footer className="flex items-center justify-between p-6 bg-gray-100">
+        <span className="text-gray-600">{t(`core:footer`)}</span>
         <PageNav
           links={locales.map((locale) => ({
             text: t(`core:locale.${locale}`),
